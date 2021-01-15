@@ -15,13 +15,14 @@ class AddFieldsToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('username');
-            $table->string('phone')->nullable();;
-            $table->string('address')->nullable();;
+            $table->string('mobile')->nullable();;
+            $table->string('district')->nullable();;
             $table->string('city')->nullable();;
             $table->string('state')->nullable();;
             $table->string('country')->nullable();;
             $table->string('profile_image')->nullable();;
-            $table->string('user_role');
+            $table->string('roles');
+            $table->string('status');
         });
     }
 
@@ -34,13 +35,14 @@ class AddFieldsToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
           $table->dropColumn('username');
-          $table->dropColumn('phone');
-          $table->dropColumn('address');
+          $table->dropColumn('mobile');
+          $table->dropColumn('district');
           $table->dropColumn('city');
           $table->dropColumn('state');
           $table->dropColumn('country');
           $table->dropColumn('profile_image');
-          $table->dropColumn('user_role');
+          $table->dropColumn('roles');
+          $table->dropColumn('status');
         });
     }
 }
