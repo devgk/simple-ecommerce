@@ -7,19 +7,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/">Home</a>
+          </li>
 
+          @auth
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{{ route('dashboard') }}">Dashboard</a>
+          </li>
+          @endauth
         </ul>
         <span class="navbar-text">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="{{ route('dashboard') }}">Dashboard</a>
-            </li>
             @auth
             <li class="nav-item">
-              <a class="nav-link text-white" href="{{ route('login') }}">Name</a>
+              <a class="nav-link text-white" href="#">{{ auth()->user()->name }}</a>
             </li>
             <li class="nav-item">
               <form action="{{ route('logout') }}" method="post">
