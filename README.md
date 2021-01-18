@@ -1,5 +1,6 @@
 
 
+
 <p  align="center"><a  href="https://laravel.com"  target="_blank"><img  src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg"  width="400"></a></p>
 
 # About Laravel Project
@@ -71,8 +72,9 @@ Project Status:
  - Order Management - Completed
 
 ## Getting Started
-1. CLone this repo
+1. Clone this repo
 2. Setup environment - Add db connection details
-3. Run DB migration
-4. Import db-exported.sql
-5. Serve Laravel Locally
+3. Composer Install
+5. Run NPM Install and NPM Watch to compile JS and SCSS
+6. Import sample-db-data.sql
+7. Serve Laravel Locally
