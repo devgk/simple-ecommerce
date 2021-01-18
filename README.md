@@ -80,6 +80,6 @@ Project Status:
 7. Serve Laravel Locally
 
 ### credential
-User: gk@gmail.com | password: 2116 - admin
-User: ak@gmail.com | password: 2116 - manager
-User: jd@gmail.com | password: 2116 - user
+ - User: gk@gmail.com | password: 2116 - admin
+ - User: ak@gmail.com | password: 2116 - manager
+ - User: jd@gmail.com | password: 2116 - user
