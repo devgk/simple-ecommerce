@@ -15,13 +15,15 @@ class AddFieldsToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('username');
-            $table->string('mobile')->nullable();;
-            $table->string('district')->nullable();;
-            $table->string('city')->nullable();;
-            $table->string('state')->nullable();;
-            $table->string('country')->nullable();;
-            $table->string('profile_image')->nullable();;
-            $table->string('roles');
+            $table->string('mobile')->nullable();
+            $table->string('address')->nullable();
+            $table->string('district')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('country')->nullable();
+            $table->string('profile_image')->nullable();
+            $table->integer('role')->unsigned();
+            $table->string('login_ip');
             $table->string('status');
         });
     }
@@ -36,12 +38,14 @@ class AddFieldsToUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
           $table->dropColumn('username');
           $table->dropColumn('mobile');
+          $table->dropColumn('address');
           $table->dropColumn('district');
           $table->dropColumn('city');
           $table->dropColumn('state');
           $table->dropColumn('country');
           $table->dropColumn('profile_image');
-          $table->dropColumn('roles');
+          $table->dropColumn('role');
+          $table->dropColumn('login_ip');
           $table->dropColumn('status');
         });
     }
