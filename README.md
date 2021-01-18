@@ -78,3 +78,8 @@ Project Status:
 5. Run NPM Install and NPM Watch to compile JS and SCSS
 6. Import sample-db-data.sql
 7. Serve Laravel Locally
+
+### credential
+User: gk@gmail.com | password: 2116 - admin
+User: ak@gmail.com | password: 2116 - manager
+User: jd@gmail.com | password: 2116 - user
